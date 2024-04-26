@@ -4,7 +4,7 @@
 
 ![demo](https://github.com/LogCreative/gesture-view/assets/61653082/c7cbdcce-6da8-4557-8b03-b98d333f00fb)
 
-代码片段：https://developers.weixin.qq.com/s/O1nlcKmV7rQu
+代码片段：https://developers.weixin.qq.com/s/wmnPFKmY7NQr
 
 代码仓库：https://github.com/LogCreative/wxapp-gesture-view
 
@@ -14,13 +14,13 @@
 
 `gesture-view` 组件在微信小程序中原生实现了双指平移、缩放、旋转，并且兼容 skyline 渲染器。算法上参考了 Dan Burzo 的 [Pinch me, I'm zooming: gestures in the DOM](https://danburzo.ro/dom-gestures/) 一文，使得变换中心始终处于双指中点。初期实现参考了 [微信小程序单指拖拽和双指缩放旋转](https://cloud.tencent.com/developer/article/2235491) 专栏文章。
 
-由于微信小程序不支持 `DOMMatrix`，并且无法通过原生 npm 构建的形式正常加载 [@thednp/dommatrix](https://github.com/thednp/dommatrix?tab=readme-ov-file) 包，这里直接使用了其 cjs（CommonJS）发布文件于 [utils/dommatrix.js](components/gesture-view/dommatrix.js)。
+由于微信小程序不支持 `DOMMatrix`，并且无法通过原生 npm 构建的形式正常加载 [@thednp/dommatrix](https://github.com/thednp/dommatrix?tab=readme-ov-file) 包，这里直接使用了其 cjs（CommonJS）发布文件于 [components/gesture-view/dommatrix.js](components/gesture-view/dommatrix.js)。
 
 示例图片作者 [Mudassir Ali](https://www.pexels.com/photo/blue-and-green-color-abstract-painting-3609832/)。
 
 ## 使用方法
 
-1. 将 `components/gesture-view` 文件夹复制到你的项目中。
+1. 将 [components/gesture-view](components/gesture-view) 文件夹复制到你的项目中。
 2. 在对应页面的 `page.json` 中引用该组件：
 ```json
 {
