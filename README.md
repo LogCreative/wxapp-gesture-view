@@ -1,5 +1,7 @@
 # wxapp-gesture-view
 
+![demo](https://github.com/LogCreative/gesture-view/assets/61653082/c7cbdcce-6da8-4557-8b03-b98d333f00fb)
+
 ## 介绍
 
 微信小程序原生组件 [`movable-view`](https://developers.weixin.qq.com/miniprogram/dev/component/movable-view.html) 只支持平移、缩放，不支持旋转，仅支持 webview 渲染器，并且有性能问题。
