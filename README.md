@@ -4,6 +4,8 @@
 
 ![demo](https://github.com/LogCreative/gesture-view/assets/61653082/c7cbdcce-6da8-4557-8b03-b98d333f00fb)
 
+代码片段：https://developers.weixin.qq.com/s/O1nlcKmV7rQu
+
 代码仓库：https://github.com/LogCreative/wxapp-gesture-view
 
 ## 介绍
