@@ -5,7 +5,7 @@
 <view style="box-sizing: border-box; border: 1.5rpx solid green;">
 <movable-area scale-area>
   <movable-view direction="all" scale scale-min="0.5" scale-max="4" out-of-bounds="true">
-    <image mode="aspectFit" src="/images/pexels-pixelcop-3609832.jpg" style="position: absolute;"></image>
+    <image mode="aspectFit" src="https://images.pexels.com/photos/3609832/pexels-photo-3609832.jpeg" style="position: absolute;"></image>
   </movable-view>
 </movable-area>
 </view>

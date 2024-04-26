@@ -14,7 +14,7 @@
 
 由于微信小程序不支持 `DOMMatrix`，并且无法通过原生 npm 构建的形式正常加载 [@thednp/dommatrix](https://github.com/thednp/dommatrix?tab=readme-ov-file) 包，这里直接使用了其 cjs（CommonJS）发布文件于 [utils/dommatrix.js](components/gesture-view/dommatrix.js)。
 
-`images` 文件夹中的示例图片可自行删除，作者 [Mudassir Ali](https://www.pexels.com/photo/blue-and-green-color-abstract-painting-3609832/)。
+示例图片作者 [Mudassir Ali](https://www.pexels.com/photo/blue-and-green-color-abstract-painting-3609832/)。
 
 ## 使用方法
 
