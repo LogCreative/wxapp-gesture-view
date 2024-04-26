@@ -1,5 +1,7 @@
 # wxapp-gesture-view
 
+微信小程序自定义组件 gesture-view，支持双指触控的平移、缩放、旋转，兼容 skyline 渲染器。
+
 ![demo](https://github.com/LogCreative/gesture-view/assets/61653082/c7cbdcce-6da8-4557-8b03-b98d333f00fb)
 
 ## 介绍
