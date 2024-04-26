@@ -1,0 +1,20 @@
+/* pages/movable-view/movable-view.wxss */
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+movable-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  width: 600px;
+}
+
+movable-area {
+  height: 60vh;
+  width: 100vw;
+  overflow: hidden;
+}

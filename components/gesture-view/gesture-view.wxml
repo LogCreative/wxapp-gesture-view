@@ -1,0 +1,11 @@
+<!--components/gesture-view/gesture-view.wxml-->
+<view class="gesture-wrapper"
+  catch:touchstart="touchStart"
+  catch:touchmove="touchMove"
+  catch:touchend="touchEnd"
+  style="width: {{width}}; height: {{height}}; overflow: hidden;">
+  <view id="gesture-ref" style="width: 0; height: 0;"></view>
+  <view class="content-container" style="transform: {{transform}}; transform-origin: 0 0;">
+    <slot></slot>
+  </view>
+</view>

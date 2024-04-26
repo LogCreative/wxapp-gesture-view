@@ -1,0 +1,9 @@
+<navigation-bar title="gesture-view" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<text class="intro">gesture-view</text>
+<text>渲染器：{{dispRenderer}}</text>
+<view style="border: 1.5rpx solid blueviolet;">
+<gesture-view width="100%" height="60vh" scaleValue="1.5" rotateValue="15">
+  <image mode="aspectFit" src="/images/pexels-pixelcop-3609832.jpg"></image>
+</gesture-view>
+</view>
+<button class="naviButton" bind:tap="onTapToMovable">查看 movable-view</button>

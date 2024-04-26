@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "navigation-bar": "/components/navigation-bar/navigation-bar",
+    "gesture-view": "/components/gesture-view/gesture-view"
+  }
+}

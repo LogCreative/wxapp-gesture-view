@@ -1,0 +1,12 @@
+<!--pages/movable-view/movable-view.wxml-->
+<navigation-bar title="movable-view" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<text class="intro">movable-view</text>
+<text>渲染器：{{dispRenderer}}</text>
+<view style="box-sizing: border-box; border: 1.5rpx solid green;">
+<movable-area scale-area>
+  <movable-view direction="all" scale scale-min="0.5" scale-max="4" out-of-bounds="true">
+    <image mode="aspectFit" src="/images/pexels-pixelcop-3609832.jpg" style="position: absolute;"></image>
+  </movable-view>
+</movable-area>
+</view>
+<button class="naviButton" bind:tap="onTapToGesture">查看 gesture-view</button>
