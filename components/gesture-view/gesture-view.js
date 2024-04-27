@@ -81,7 +81,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    startScale: 0.5,
+    startScale: -1,
     startDistance: -1,
     transform: "",
     transformMatrix: null,
@@ -191,10 +191,10 @@ Component({
         const mp_init = this.midpoint(startTouches);
         const mp_cur = this.midpoint(touches);
         const translateX = this.data.translateX ? mp_cur.x - mp_init.x : 0;
-        const translateY = this.data.translateY ?
-        mp_cur.y - mp_init.y : 0;
+        const translateY = this.data.translateY ? mp_cur.y - mp_init.y : 0;
 
-        let transformMatrix = new CSSMatrix().translate(this.data.startOrigin.x, this.data.startOrigin.y)
+        let transformMatrix = new CSSMatrix()
+          .translate(this.data.startOrigin.x, this.data.startOrigin.y)
           .translate(translateX, translateY)
           .rotate(delta_rotate)
           .scale(delta_scale)
