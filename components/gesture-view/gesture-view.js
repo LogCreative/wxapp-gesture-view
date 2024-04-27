@@ -86,6 +86,7 @@ Component({
     transform: "",
     transformMatrix: null,
     startTransformMatrix: null,
+    startRotate: -1,
     startAngle: 0,
     startOrigin: {x: 0, y: 0},
     startTouches: [],
@@ -166,6 +167,7 @@ Component({
         }).exec();
       }
       this.setData({
+        startRotate: this.data.rotateValue,
         startScale: this.data.scaleValue,
         startTransformMatrix: this.data.transformMatrix
       })
@@ -173,7 +175,7 @@ Component({
     
     touchMove: function(e) {
       const touches = e.touches
-      const { startTouches, startScale, startAngle } = this.data
+      const { startTouches, startScale, startRotate, startAngle } = this.data
       if (touches.length === 2 && startTouches.length === 2) {
         let curScale = startScale, delta_scale = 1.0;
         if (this.data.scale) {
@@ -183,9 +185,10 @@ Component({
           delta_scale = curScale / startScale;
         }
         
-        let delta_rotate = 0.0;
+        let curRotate = startRotate, delta_rotate = 0.0;
         if (this.data.rotate) {
           delta_rotate = this.getTouchAngle(touches) - startAngle;
+          curRotate = startRotate + delta_rotate;
         }
 
         const mp_init = this.midpoint(startTouches);
@@ -203,6 +206,7 @@ Component({
 
         this.setData({
           scaleValue: curScale,
+          rotateValue: curRotate,
           transformMatrix: transformMatrix
         });
       } else if (startTouches.length !== 2) {
