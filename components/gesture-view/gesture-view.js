@@ -137,16 +137,7 @@ Component({
         y: (t1.clientY + t2.clientY) / 2
       };
     },
-
-    gestureToMatrix(translateX, translateY, scale, rotation, origin) {
-      return new CSSMatrix()
-        .translate(origin.x, origin.y)
-        .translate(translateX || 0, translateY || 0)
-        .rotate(rotation || 0)
-        .scale(scale || 1)
-        .translate(-origin.x, -origin.y);
-    },
-
+    
     touchStart: function(e) {
       const touches = e.touches
       this.data.startTouches = touches
